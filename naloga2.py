@@ -7,7 +7,7 @@ def konvolucija(slika, jedro):
     pass
 
 def filtriraj_gaussovo_jedro(slika,sigma):
-    '''Filtrira sliko z Gaussovim jedrom. Uporabi funkcijo cv.GaussianBlur.'''
+    '''Filtrira sliko z Gaussovim jedrom..'''
     pass
 
 if __name__ == '__main__':

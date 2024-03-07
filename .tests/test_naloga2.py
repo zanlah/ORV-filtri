@@ -64,7 +64,7 @@ def test_konvolucija():
         np.testing.assert_array_equal(r, slika_filt[:, :, n], err_msg=f'Rezultat konvolucije se ne ujema z pričakovanim, korak {n}.', verbose=True)
 
 
-def test_filtriraj_gaussovo_jedro(self):
+def test_filtriraj_z_gaussovim_jedrom(self):
 
     slika_imp = np.zeros((15, 15), dtype=np.float32)
     slika_imp[7, 7] = 1

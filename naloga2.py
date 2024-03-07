@@ -6,10 +6,13 @@ def konvolucija(slika, jedro):
     Funkcijo implementirajte sami z uporabo zank oz. vektorskega računanja.'''
     pass
 
-def filtriraj_gaussovo_jedro(slika,sigma):
+def filtriraj_z_gaussovim_jedrom(slika,sigma):
     '''Filtrira sliko z Gaussovim jedrom..'''
     pass
 
-if __name__ == '__main__':
-    
+def filtriraj_sobel_smer(slika):
+    '''Filtrira sliko z Sobelovim jedrom in označi gradiente v orignalni sliki glede na ustrezen pogoj.'''
+    pass
+
+if __name__ == '__main__':    
     pass

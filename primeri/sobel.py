@@ -12,9 +12,10 @@ def sobel_filter(slika, dtype=np.uint8):
     # Apply Gaussian blur
     zamegljena = cv.GaussianBlur(siva, (3, 3), 0)
     
-    # Sobel operator kernels
-    sobel_x = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
-    sobel_y = np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]])
+    # Sobelova jedra
+    sobel_x = np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]])
+    sobel_y = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
+    
 
     
     
@@ -31,7 +32,6 @@ def sobel_filter(slika, dtype=np.uint8):
     print(sobel)
     return sobel
     
-    #return cv.convertScaleAbs(sobel)
 
 if __name__ == "__main__":
     slika = cv.imread("../.utils/lenna.png")
